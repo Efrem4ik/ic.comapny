@@ -1,14 +1,24 @@
 $(function () {
 
-  // $('.menu__btn').on('click', function(){
-  //   $('.menu__list').slideToggle();
-  // }); Для бургера!
+  $('.menu__btn').on('click', function () {
+    $('.header__list').slideToggle();
+  });
 
   $('.projects__item-slider').slick({
     dots: false,
     arrows: false,
     slidesToShow: 2,
     variableWidth: true,
+  });
+  $('.projects__mob-slider').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
+  });
+  $('.portfolio-mob__slider').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
   });
 
   $('.projects__tabs .tab').on('click', function (event) {
